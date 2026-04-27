@@ -7,7 +7,7 @@ jobs:
             runs-on: ubuntu-latest
             defaults:
                 run:
-                    working-directory: backend
+                    working-directory: frontend
             steps:
                 - name : checkout repo
                   uses : actions/checkout@v4
@@ -17,5 +17,5 @@ jobs:
                   run: npm install 
                 - name : Run Test
                   run : npm test
-                       
+
 
